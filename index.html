@@ -10,6 +10,7 @@
             --secondary-color: #6C757D;
             --background-color: #F8F9FA;
             --text-color: #212529;
+            --accent-color: #FF5722;
         }
 
         * {
@@ -28,14 +29,16 @@
         }
 
         header {
-            background-color: var(--primary-color);
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
             color: #fff;
-            padding: 20px 10%;
+            padding: 40px 10%;
             text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
         }
 
         header h1 {
             margin-bottom: 10px;
+            font-size: 2.5em;
         }
 
         header p {
@@ -53,6 +56,10 @@
         .section h2 {
             margin-bottom: 20px;
             color: var(--primary-color);
+            font-size: 1.8em;
+            border-bottom: 3px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 5px;
         }
 
         .section ul {
@@ -61,13 +68,18 @@
 
         .section ul li {
             margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid var(--secondary-color);
+            border-radius: 5px;
         }
 
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             background-color: var(--secondary-color);
             color: #fff;
+            margin-top: 40px;
         }
 
         a {
@@ -77,6 +89,26 @@
 
         a:hover {
             text-decoration: underline;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid var(--secondary-color);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
@@ -110,6 +142,24 @@
                 <li>Telas de Vendas com emissão de cupons customizados.</li>
                 <li>Controle de comissões e integração com Discord para logs automáticos.</li>
             </ul>
+        </section>
+
+        <section class="section">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <img src="https://i.ibb.co/yQxxMHt" alt="Projeto 1">
+                <img src="https://i.ibb.co/P6gBRGh" alt="Projeto 2">
+                <img src="https://i.ibb.co/zhZNf3p" alt="Projeto 3">
+                <img src="https://i.ibb.co/PtBPBcJ" alt="Projeto 4">
+                <img src="https://i.ibb.co/JycbfkC" alt="Projeto 5">
+                <img src="https://i.ibb.co/88GhRDD" alt="Projeto 6">
+                <img src="https://i.ibb.co/XVgb7Pk" alt="Projeto 7">
+                <img src="https://i.ibb.co/z7ZHs60" alt="Projeto 8">
+                <img src="https://i.ibb.co/Sctt7JL" alt="Projeto 9">
+                <img src="https://i.ibb.co/1GSKrn1" alt="Projeto 10">
+                <img src="https://i.ibb.co/PjFnG3W" alt="Projeto 11">
+                <img src="https://i.ibb.co/5W8TR1w" alt="Projeto 12">
+            </div>
         </section>
     </div>
 
